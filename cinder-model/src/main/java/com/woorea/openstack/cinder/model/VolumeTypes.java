@@ -1,10 +1,5 @@
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
-
-import org.codehaus.jackson.annotate.JsonProperty;
 /**
  *
  * @author Krishna

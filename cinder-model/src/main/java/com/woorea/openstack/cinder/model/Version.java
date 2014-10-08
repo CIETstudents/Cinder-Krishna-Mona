@@ -1,11 +1,12 @@
 
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 import java.util.Calendar;
 
 /**
  *
- * @author Gayu
+ * @author Krishna
+ * @author Mona
  */
 public class Version {
 

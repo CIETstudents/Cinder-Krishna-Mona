@@ -2,32 +2,34 @@ package com.woorea.openstack.cinder;
 
 import com.woorea.openstack.base.client.OpenStackClient;
 import com.woorea.openstack.base.client.OpenStackClientConnector;
-import com.woorea.openstack.nova.api.ExtensionsResource;
-import com.woorea.openstack.nova.api.QuotaSetsResource;
-import com.woorea.openstack.nova.api.extensions.SnapshotsExtension;
-import com.woorea.openstack.nova.api.extensions.VolumesExtension;
+import com.woorea.openstack.cinder.api.ExtensionsResource;
+import com.woorea.openstack.cinder.api.LimitsResource;
+import com.woorea.openstack.cinder.api.QosSpecsResource;
+import com.woorea.openstack.cinder.api.QuotaSetsResource;
+import com.woorea.openstack.cinder.api.SnapshotsResource;
+import com.woorea.openstack.cinder.api.VersionsResource;
+import com.woorea.openstack.cinder.api.VolumesResource;
 
 /**
- * @author govindon.
- *
+ * @author Krishna.
+ * @author Mona
  * The class Cinder extends the OpenStackClient class.
  */
 public class Cinder extends OpenStackClient {
-
     /**
      * The instance is created for the ExtensionResouce class.
      *
      * Lists Block Storage API extensions.
      */
     private final ExtensionsResource EXTENSIONS;
-    private final SnapshotsExtension SNAPSHOTS;
+    private final SnapshotsResource SNAPSHOTS;
     /**
      * The instance is created for the VolumesExtension class.
      *
      * A volume is a detachable block storage device. You can think of it as a
      * USB hard drive. You can attach a volume to one instance at a time
      */
-    private final VolumesExtension VOLUMES;
+    private final VolumesResource VOLUMES;
  
     /**
      * The instance is created for QuotaSetsResource class.
@@ -37,6 +39,11 @@ public class Cinder extends OpenStackClient {
      */
     private final QuotaSetsResource QUOTA_SETS;
  
+    private final QosSpecsResource QOS_SPECS;
+    
+    private final VersionsResource VERSIONS;
+    
+    private final LimitsResource LIMITS;
     /**
      * The instance of OpenStackClientConnector is used to access the Cinder
      * class.
@@ -47,9 +54,12 @@ public class Cinder extends OpenStackClient {
     public Cinder(String endpoint, OpenStackClientConnector connector) {
         super(endpoint, connector);
         EXTENSIONS = new ExtensionsResource(this);
-        SNAPSHOTS = new SnapshotsExtension(this);
-        VOLUMES = new VolumesExtension(this);
+        SNAPSHOTS = new SnapshotsResource(this);
+        VOLUMES = new VolumesResource(this);
         QUOTA_SETS = new QuotaSetsResource(this);
+        QOS_SPECS = new QosSpecsResource(this);
+        VERSIONS = new VersionsResource(this);
+        LIMITS = new LimitsResource(this);
     }
 
     /**
@@ -70,14 +80,14 @@ public class Cinder extends OpenStackClient {
     /**
      * @return the SNAPSHOTS
      */
-    public SnapshotsExtension snapshots() {
+    public SnapshotsResource snapshots() {
         return SNAPSHOTS;
     }
 
     /**
      * @return the VOLUMES
      */
-    public VolumesExtension volumes() {
+    public VolumesResource volumes() {
         return VOLUMES;
     }
 
@@ -87,5 +97,16 @@ public class Cinder extends OpenStackClient {
     public QuotaSetsResource quotaSets() {
         return QUOTA_SETS;
     }
-
+    
+     public QosSpecsResource qosspecs() {
+        return QOS_SPECS;
+    }
+     
+     public VersionsResource versions(){
+         return VERSIONS;
+     }
+     
+     public LimitsResource limits() {
+         return LIMITS;
+     }
 }

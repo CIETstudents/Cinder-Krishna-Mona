@@ -1,5 +1,4 @@
-
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 /**
  *
@@ -8,7 +7,7 @@ package com.woorea.cinder.model;
  */
 public class Limits {
 
-  private int rate;
+    private int rate;
 
     private int absolute;
 
@@ -92,5 +91,5 @@ public class Limits {
     public String toString() {
         return "Limits{" + "rate=" + rate + ", absolute=" + absolute + ", totalSnapshotsUsed=" + totalSnapshotsUsed + ", maxTotalVolumeGigabytes=" + maxTotalVolumeGigabytes + ", totalGigabytesUsed=" + totalGigabytesUsed + ", maxTotalSnapshots=" + maxTotalSnapshots + ", totalVolumesUsed=" + totalVolumesUsed + ", maxTotalVolumes=" + maxTotalVolumes + '}';
     }
-    
+
 }

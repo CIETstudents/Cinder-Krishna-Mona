@@ -1,4 +1,4 @@
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 import java.io.Serializable;
 import java.util.Iterator;

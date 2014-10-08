@@ -1,11 +1,11 @@
 package com.woorea.openstack.cinder.api;
 
+import com.woorea.openstack.cinder.model.QuotaSet;
 import com.woorea.openstack.base.client.Entity;
 import com.woorea.openstack.base.client.HttpMethod;
 import com.woorea.openstack.base.client.OpenStackClient;
 import com.woorea.openstack.base.client.OpenStackRequest;
-import com.woorea.openstack.nova.model.Limits;
-import com.woorea.openstack.nova.model.QuotaSet;
+import com.woorea.openstack.cinder.model.QuotaSets;
 
 /**
  * @author govindon.

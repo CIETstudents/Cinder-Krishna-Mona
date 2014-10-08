@@ -1,5 +1,5 @@
 
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 import java.io.Serializable;
 import java.util.Iterator;
@@ -9,22 +9,22 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  *
  * @author Krishna
- * @author Mona
+ * @author Mona.
  */
-public class QuotaSets implements Iterable<QuotaSet>, Serializable {
-        
-        @JsonProperty("QuotaSets")
-	private List<QuotaSet> list;
+public class QosSpecs implements Iterable<QosSpec>, Serializable {
+    
+    @JsonProperty("QosSpecs")
+	private List<QosSpec> list;
 
 	/**
 	 * @return the list
 	 */
-	public List<QuotaSet> getList() {
+	public List<QosSpec> getList() {
 		return list;
 	}
 	
 	@Override
-	public Iterator<QuotaSet> iterator() {
+	public Iterator<QosSpec> iterator() {
 		return list.iterator();
 	}
 	
@@ -34,7 +34,7 @@ public class QuotaSets implements Iterable<QuotaSet>, Serializable {
 	 */
 	@Override
 	public String toString() {
-		return "QuotaSets [list=" + list + "]";
+		return "QosSpec [list=" + list + "]";
 	}
 
     

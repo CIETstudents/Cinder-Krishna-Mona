@@ -1,5 +1,5 @@
 
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 /**
  *

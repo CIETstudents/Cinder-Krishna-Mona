@@ -1,5 +1,5 @@
 
-package com.woorea.cinder.model;
+package com.woorea.openstack.cinder.model;
 
 import java.util.Map;
 
@@ -8,7 +8,7 @@ import java.util.Map;
  * @author Krishna
  * @author Mona
  */
-class Metadata {
+public class Metadata {
     	private Map<String, String> metadata;
 
 	/**
