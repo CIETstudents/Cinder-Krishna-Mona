@@ -9,52 +9,22 @@ import com.woorea.openstack.cinder.model.Volumes;
 import com.woorea.openstack.cinder.model.VolumeTypes;
 import com.woorea.openstack.cinder.model.VolumeManage;
 
-/**
- * @author Govindon.
-
- The VolumesResource Class gives the Volume Extension to Extension Class.
- */
 public class VolumesResource {
 
-    /**
-     * The instance is created for the OpenStackClient class.
-     */
     private final OpenStackClient CLIENT;
 
-    /**
-     * Constructor VolumesExtension uses the OpenStackClient Request from
-     * Client.
-     *
-     * @param client gives the Request of the Client.
-     */
     public VolumesResource(OpenStackClient client) {
         CLIENT = client;
     }
 
-    /**
-     * @return the New List
-     */
     public List list(boolean detail) {
         return new List(detail);
     }
 
-    /**
-     * The instance of VolumeForCreate class is used to access the Create class.
-     *
-     * @param volume gives the volume detail.
-     * @return new flavor variable for create method.
-     */
     public Create create(Volume volume) {
         return new Create(volume);
     }
 
-
-    /**
-     * Method Show for VolumesResource Class and pass the id value.
-     *
-     * @param id gives id of Client.
-     * @return Shows new id value.
-     */
     public Show show(String id) {
         return new Show(id);
     }
@@ -76,28 +46,17 @@ public class VolumesResource {
     public Manage manage(String id) {
         return new Manage(id);
     }
-    /**
-     * Method Delete for VolumesResource Class and pass the id value.
-     *
-     * @param id gives id of Client.
-     * @return deleted id value.
-     */
+    
+    public Types types(Sting id) {
+        return new Types(id);
+    }
+
     public Delete delete(String id) {
         return new Delete(id);
     }
 
-    /**
-     * Class list inherits the OpenStackRequest given by the Client and pass to
-     * the VolumeExtension Class.
-     */
     public class List extends OpenStackRequest<Volumes> {
 
-        /**
-         * Parameterized Constructor for the list Class and return type of
-         * boolean.
-         *
-         * @param detail gives the Volumes detail.
-         */
         public List(boolean detail) {
             super(CLIENT, HttpMethod.GET, detail ? "/os-volumes/detail"
                     : "/os-volumes", null, Volumes.class);
@@ -115,18 +74,8 @@ public class VolumesResource {
 		
 	}
 
-    /**
-     * Class Show inherits the OpenStackRequest given by the Client and pass to
- the VolumesResource Class.
-     */
     public class Show extends OpenStackRequest<Volume> {
 
-        /**
-         * Method Show is used to show the id value of the Client, it is
-         * Constructor and depends on the Base Class.
-         *
-         * @param id the id to set
-         */
         public Show(String id) {
             super(CLIENT, HttpMethod.GET, new StringBuilder("/os-volumes/")
                     .append(id).toString(), null, Volume.class);
@@ -166,23 +115,24 @@ public class VolumesResource {
 //		}
 		
 	
-    public class Manage extends OpenStackRequest<Volume> {
+    public class Manage extends OpenStackRequest<VolumeManage> {
 
-        public Update(String id) {
+        public Manage(String id) {
             super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-volumes/")
-                    .append(id).toString(), null, Volume.class);
+                    .append(id).toString(), null, VolumeManage.class);
         }
-    /**
-     * Class Delete inherits the OpenStackRequest given by the Client and
-     * deletes the Request given by the Client.
-     */
+    }
+    //note tis it ll come or not i dont knw.
+    public class Types extends OpenStackRequest<VolumeManage> {
+
+        public Manage(String id) {
+            super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-volumes/")
+                    .append(id).toString(), null, VolumeManage.class);
+        }
+    }
+    
     public class Delete extends OpenStackRequest<Void> {
 
-        /**
-         * Constructor method of Delete and Calls the HttpMethod of Delete.
-         *
-         * @param id the id to set
-         */
         public Delete(String id) {
             super(CLIENT, HttpMethod.DELETE, new StringBuilder("/os-volumes/")
                     .append(id).toString(), null, Void.class);
