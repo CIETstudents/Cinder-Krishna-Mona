@@ -2,7 +2,6 @@ package com.woorea.openstack.cinder;
 
 import com.woorea.openstack.base.client.OpenStackClient;
 import com.woorea.openstack.base.client.OpenStackClientConnector;
-import com.woorea.openstack.cinder.api.ExtensionsResource;
 import com.woorea.openstack.cinder.api.LimitsResource;
 import com.woorea.openstack.cinder.api.QosSpecsResource;
 import com.woorea.openstack.cinder.api.QuotaSetsResource;
@@ -21,7 +20,6 @@ public class Cinder extends OpenStackClient {
      *
      * Lists Block Storage API extensions.
      */
-    private final ExtensionsResource EXTENSIONS;
     private final SnapshotsResource SNAPSHOTS;
     /**
      * The instance is created for the VolumesExtension class.
@@ -53,7 +51,6 @@ public class Cinder extends OpenStackClient {
      */
     public Cinder(String endpoint, OpenStackClientConnector connector) {
         super(endpoint, connector);
-        EXTENSIONS = new ExtensionsResource(this);
         SNAPSHOTS = new SnapshotsResource(this);
         VOLUMES = new VolumesResource(this);
         QUOTA_SETS = new QuotaSetsResource(this);
@@ -69,12 +66,7 @@ public class Cinder extends OpenStackClient {
         this(endpoint, null);
     }
 
-    /**
-     * @return the EXTENSIONS
-     */
-    public ExtensionsResource extensions() {
-        return EXTENSIONS;
-    }
+    
 
 
     /**
