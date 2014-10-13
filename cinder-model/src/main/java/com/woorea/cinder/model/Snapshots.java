@@ -1,4 +1,4 @@
-package com.woorea.openstack.cinder.model;
+package com.woorea.cinder.model;
 
 import java.io.Serializable;
 import java.util.Iterator;
@@ -8,8 +8,9 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * This class Shows information for a specified snapshot.
- * @author Krishna.
- * @author Mona.
+ *
+ * @author Krishna
+ * @author Mona
  */
 public class Snapshots implements Iterable<Snapshot>, Serializable {
 
@@ -18,6 +19,7 @@ public class Snapshots implements Iterable<Snapshot>, Serializable {
      */
     @JsonProperty("SnapshotManage")
     private List<Snapshot> list;
+
     /**
      * One or more meta data key and value pairs to associate with the volume.
      */
