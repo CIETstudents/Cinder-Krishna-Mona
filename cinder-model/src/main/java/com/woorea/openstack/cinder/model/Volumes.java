@@ -1,4 +1,3 @@
-
 package com.woorea.openstack.cinder.model;
 
 import java.io.Serializable;
@@ -7,27 +6,44 @@ import java.util.List;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
- *
- * @author Krishna
- * @author Mona.
+ * This gives resources for volume to create instance.
+ * 
+* @author Krishna
+ * @author Mona
  */
-public class Volumes implements Iterable<Volume>, Serializable{
-    
-    @JsonProperty("Volumes")
-	private List<Volume> list;
+public class Volumes implements Iterable<Volume>, Serializable {
 
-	
-	public List<Volume> getId() {
-            return list;
-	}
-        
-	public List<Volume> getName() {
-            return list;
-	}
-        
-	@Override
-	public Iterator<Volume> iterator() {
-		return list.iterator();
-	}
-	
+    /**
+     * this interface serialize attributes in order.
+     */
+    @JsonProperty("Volumes")
+    private List<Volume> list;
+
+    /**
+     * gets identifier for volume.
+     *
+     * @return list.
+     */
+    public List<Volume> getId() {
+        return list;
+    }
+
+    /**
+     * gets name for the volume.
+     *
+     * @return list.
+     */
+    public List<Volume> getName() {
+        return list;
+    }
+
+    /**
+     * used to remove duplicate elements.
+     *
+     * @return list.
+     */
+    @Override
+    public Iterator<Volume> iterator() {
+        return list.iterator();
+    }
 }

@@ -1,26 +1,20 @@
 package com.woorea.openstack.cinder.model;
 
 /**
+ * This class
  *
- * @author Krishna
- * @author Mona
+ * @author Krishna.
+ * @author Mona.
  */
 public class Limits {
 
     private int rate;
-
     private int absolute;
-
     private int totalSnapshotsUsed;
-
     private int maxTotalVolumeGigabytes;
-
     private int totalGigabytesUsed;
-
     private int maxTotalSnapshots;
-
     private int totalVolumesUsed;
-
     private int maxTotalVolumes;
 
     public int getRate() {
@@ -91,5 +85,4 @@ public class Limits {
     public String toString() {
         return "Limits{" + "rate=" + rate + ", absolute=" + absolute + ", totalSnapshotsUsed=" + totalSnapshotsUsed + ", maxTotalVolumeGigabytes=" + maxTotalVolumeGigabytes + ", totalGigabytesUsed=" + totalGigabytesUsed + ", maxTotalSnapshots=" + maxTotalSnapshots + ", totalVolumesUsed=" + totalVolumesUsed + ", maxTotalVolumes=" + maxTotalVolumes + '}';
     }
-
 }
