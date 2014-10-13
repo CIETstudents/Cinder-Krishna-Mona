@@ -8,7 +8,8 @@ import com.woorea.openstack.cinder.model.Limits;
 
 /**
  *
- * @author sony
+ * @author Krishna
+ * @author Mona
  */
 public class LimitsResource {
     

@@ -3,7 +3,7 @@ package com.woorea.openstack.cinder.api;
 import com.woorea.openstack.base.client.HttpMethod;
 import com.woorea.openstack.base.client.OpenStackClient;
 import com.woorea.openstack.base.client.OpenStackRequest;
-import com.woorea.openstack.nova.model.Extensions;
+import com.woorea.openstack.Cinder.model.Extensions;
 
 /**
  * @author govindon. The class ExtensionsResource.

@@ -47,7 +47,7 @@ public class VolumesResource {
         return new Manage(id);
     }
     
-    public Types types(Sting id) {
+    public Types types(String id) {
         return new Types(id);
     }
 
@@ -123,13 +123,14 @@ public class VolumesResource {
         }
     }
     //note tis it ll come or not i dont knw.
-    public class Types extends OpenStackRequest<VolumeManage> {
+    public class Types extends OpenStackRequest<Volume> {
 
-        public Manage(String id) {
+        public Types(String id) {
             super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-volumes/")
-                    .append(id).toString(), null, VolumeManage.class);
+                    .append(id).toString(), null, Volume.class);
         }
     }
+    
     
     public class Delete extends OpenStackRequest<Void> {
 

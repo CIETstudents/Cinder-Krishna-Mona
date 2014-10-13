@@ -23,14 +23,15 @@ public class QuotaSetsResource {
         return new UpdateQuota(tenantId, quotaSet);
     }
 
-    public ShowUsage showUsage(String tenantId) {
-        return new ShowUsage(tenantId);
+    public Delete delete(String id) {
+        return new Delete(id);
+    }
+    
+    public ShowQuotaUser showquotauser(String tenantId) {
+        return new ShowQuotaUser(tenantId);
     }
 
-    public ShowUsedLimits showUsedLimits() {
-        return new ShowUsedLimits();
-    }
-
+    
     /**
      * The class ShowQuota extends the QuotaSet class.
      */
@@ -50,5 +51,22 @@ public class QuotaSetsResource {
                     .append(tenantId), Entity.json(quotaSet), QuotaSet.class);
         }
     }
+
+    public class Delete extends OpenStackRequest<Void> {
+
+        public Delete(String id) {
+            super(CLIENT, HttpMethod.DELETE, new StringBuilder("/os-quota-sets/")
+                    .append(id).toString(), null, Void.class);
+        }
+    }
+
+    public class ShowQuotaUser extends OpenStackRequest<QuotaSets> {
+
+        public ShowQuotaUser(String id) {
+            super(CLIENT, HttpMethod.GET, new StringBuilder("/os-quota-sets/")
+                    .append(id).toString(), null, QuotaSets.class);
+        }
+    }
+
 }
 

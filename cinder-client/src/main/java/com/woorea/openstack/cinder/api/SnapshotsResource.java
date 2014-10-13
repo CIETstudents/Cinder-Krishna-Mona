@@ -8,6 +8,11 @@ import com.woorea.openstack.cinder.model.Snapshot;
 import com.woorea.openstack.cinder.model.Snapshots;
 import com.woorea.openstack.cinder.model.Metadata;
 
+/**
+ * 
+ * @author Krishna
+ * @author Mona
+ */
 public class SnapshotsResource {
 
     private final OpenStackClient CLIENT;
