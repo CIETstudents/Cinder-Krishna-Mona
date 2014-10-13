@@ -8,7 +8,7 @@ import java.util.Map;
  * @author Krishna.
  * @author Mona.
  */
-class Metadata {
+public class Metadata {
 
     /**
      * One or more meta data key and value pairs to associate with the volume.

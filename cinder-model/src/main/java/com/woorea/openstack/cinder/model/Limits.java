@@ -7,20 +7,51 @@ package com.woorea.openstack.cinder.model;
  * @author Mona.
  */
 public class Limits {
-
+    /**
+     * Provides the limit rate.
+     */
     private int rate;
+    /**
+     * have the absolute limit object.
+     */
     private int absolute;
+    /**
+     * Total number of snapshots used.
+     */
     private int totalSnapshotsUsed;
+    /**
+     * Maximum total amount of volumes (GB).
+     */
     private int maxTotalVolumeGigabytes;
+    /**
+     * Total number of GBs used.
+     */
     private int totalGigabytesUsed;
+    /**
+     * Total number of snapshots.
+     */
     private int maxTotalSnapshots;
+    /**
+     * Total number of volumes used.
+     */
     private int totalVolumesUsed;
+    /**
+     * Maximum number of volumes.
+     */
     private int maxTotalVolumes;
 
+    /**
+     * get the limit rate from SpanShots.
+     * @return rate of the limit.
+     */
     public int getRate() {
         return rate;
     }
 
+    /**
+     * 
+     * @param rate 
+     */
     public void setRate(int rate) {
         this.rate = rate;
     }

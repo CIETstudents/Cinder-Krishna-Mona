@@ -9,7 +9,7 @@ package com.woorea.openstack.cinder.model;
 public class QosSpec {
 
     /**
-     * Specifies keys nd value pairs.
+     * Specifies keys and value pairs.
      */
     private String specs;
     /**
