@@ -218,7 +218,7 @@ public class VolumesResource {
          * @param id gives the Client Id.
          */
         public Manage(String id) {
-            super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-volumes/")
+            super(CLIENT, HttpMethod.POST, new StringBuilder("/os-volumes/")
                     .append(id).toString(), null, VolumeManage.class);
         }
     }
@@ -235,7 +235,7 @@ public class VolumesResource {
          * @param id gives the Client Id.
          */
         public Types(String id) {
-            super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-volumes/")
+            super(CLIENT, HttpMethod.GET, new StringBuilder("/os-volumes/")
                     .append(id).toString(), null, VolumeTypes.class);
         }
     }

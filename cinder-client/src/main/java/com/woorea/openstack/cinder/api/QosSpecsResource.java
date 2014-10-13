@@ -121,14 +121,4 @@ public class QosSpecsResource {
                     .append(id).toString(), null, Void.class);
         }
     }
-
-
-
-
-
-
-
-
-
-
 }
