@@ -5,8 +5,8 @@ import java.util.Map;
 
 /**
  *This class is to generate a time copy of the data that a volume contains.
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class Snapshot {
 

@@ -7,8 +7,8 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * This class gives backup is a full copy of a volume stored in an external service.
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class Backup implements Iterable<Volume>, Serializable {
 

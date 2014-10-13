@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  *This class gives volume details along with description.
- * @author Krishna.
+ * @author Krishna
  * @author Mona
  */
 public class Volume {

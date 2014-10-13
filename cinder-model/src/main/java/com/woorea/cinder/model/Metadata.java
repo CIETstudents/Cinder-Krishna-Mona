@@ -4,8 +4,8 @@ import java.util.Map;
 
 /**
  * This class shows key and value pairs for volume.
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 class Metadata {
 

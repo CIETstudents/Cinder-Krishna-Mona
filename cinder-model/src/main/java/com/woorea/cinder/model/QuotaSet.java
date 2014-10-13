@@ -2,8 +2,8 @@ package com.woorea.cinder.model;
 
 /**
  * This class for shows QuotaSet for tenants. 
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class QuotaSet {
 

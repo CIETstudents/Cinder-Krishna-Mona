@@ -3,7 +3,7 @@ package com.woorea.cinder.model;
 /**
  * This class shows administrators policy settings.
  * @author Krishna
- * @author Mona
+ * @author Mona.
  */
 public class QosSpec {
     

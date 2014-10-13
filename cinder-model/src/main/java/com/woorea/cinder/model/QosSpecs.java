@@ -8,7 +8,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * This class shows the required specifications for object.
  * @author Krishna
- * @author Mona
+ * @author Mona.
  */
 public class QosSpecs implements Iterable<QosSpec>, Serializable {
 

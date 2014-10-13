@@ -28,7 +28,7 @@ public class QosAssociations implements Iterable<QosSpec>, Serializable {
 
     /**
      * get name for QOs specification.
-     * @return 
+     * @return list.
      */
     public List<QosSpec> getName() {
         return list;

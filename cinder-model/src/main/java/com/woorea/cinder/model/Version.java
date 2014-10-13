@@ -5,8 +5,8 @@ import java.util.Date;
 
 /**
  * The version of API. 
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class Version {
 

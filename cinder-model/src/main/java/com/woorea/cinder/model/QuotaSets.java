@@ -8,8 +8,8 @@ import org.codehaus.jackson.annotate.JsonProperty;
 /**
  * This class import quotas.
  *
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class QuotaSets implements Iterable<QuotaSet>, Serializable {
 
