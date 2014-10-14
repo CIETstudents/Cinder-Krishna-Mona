@@ -107,8 +107,7 @@ public class QosSpecsResource {
 			this.qosspec = qosspec;
 		}
 		
-	}
-
+    }
     public class Show extends OpenStackRequest<QosSpec> {
 
         public Show(String id) {

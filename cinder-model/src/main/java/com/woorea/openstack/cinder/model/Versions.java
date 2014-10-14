@@ -7,8 +7,7 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * This class extends version.
- * 
-* @author Krishna.
+ * @author Krishna.
  * @author Mona.
  */
 public class Versions implements Iterable<Version>, Serializable {
@@ -21,7 +20,6 @@ public class Versions implements Iterable<Version>, Serializable {
 
     /**
      * get identifier of version.
-     *
      * @return list.
      */
     public List<Version> getId() {
@@ -30,7 +28,6 @@ public class Versions implements Iterable<Version>, Serializable {
 
     /**
      * get the name of version.
-     *
      * @return list.
      */
     public List<Version> getName() {
@@ -39,7 +36,6 @@ public class Versions implements Iterable<Version>, Serializable {
 
     /**
      * get the status of version.
-     *
      * @return list.
      */
     public List<Version> getStatus() {
@@ -48,7 +44,6 @@ public class Versions implements Iterable<Version>, Serializable {
 
     /**
      * get the attachments for versions.
-     *
      * @return list.
      */
     public List<Version> getAttachments() {
@@ -57,7 +52,6 @@ public class Versions implements Iterable<Version>, Serializable {
 
     /**
      * to remove duplicate elements.
-     *
      * @return list.
      */
     @Override

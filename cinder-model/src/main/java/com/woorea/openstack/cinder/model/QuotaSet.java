@@ -64,7 +64,6 @@ public class QuotaSet {
 
     /**
      * get the number of instance cores allowed for each tenant.
-     *
      * @return cores.
      */
     public int getCores() {
@@ -73,7 +72,6 @@ public class QuotaSet {
 
     /**
      * set the number of instance cores allowed for each tenant.
-     *
      * @param cores as instance.
      */
     public void setCores(int cores) {
@@ -82,7 +80,6 @@ public class QuotaSet {
 
     /**
      * get the number of fixed IP addresses allowed for each tenant.
-     *
      * @return fixed_ips.
      */
     public int getFixed_ips() {
@@ -91,7 +88,6 @@ public class QuotaSet {
 
     /**
      * set the number of fixed IP addresses allowed for each tenant.
-     *
      * @param fixed_ips greater or equal to instance.
      */
     public void setFixed_ips(int fixed_ips) {
@@ -100,7 +96,6 @@ public class QuotaSet {
 
     /**
      * get the number of floating IP addresses allowed for each tenant.
-     *
      * @return floating_ips.
      */
     public int getFloating_ips() {
@@ -109,7 +104,6 @@ public class QuotaSet {
 
     /**
      * set the number of floating IP addresses allowed for each tenant.
-     *
      * @param floating_ips for instances.
      */
     public void setFloating_ips(int floating_ips) {
@@ -118,7 +112,6 @@ public class QuotaSet {
 
     /**
      * get the identifier for quota set.
-     *
      * @return id.
      */
     public int getId() {

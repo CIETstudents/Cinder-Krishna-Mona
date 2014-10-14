@@ -98,7 +98,8 @@ public class VolumesResource {
     public class List extends OpenStackRequest<Volumes> {
 
         /**
-         * Parameterized Constructor for the list Class and return type of boolean.
+         * Parameterized Constructor for the list Class and return type of 
+         * boolean.
          * @param detail the detail to set
          */
         public List(boolean detail) {
@@ -119,7 +120,8 @@ public class VolumesResource {
         private Volume volume;
 
         /**
-         * The created method  and has the parameter of return type volume and calls the HttpMethod "POST".         *
+         * The created method  and has the parameter of return type volume and 
+         * calls the HttpMethod "POST".         *
          * @param volume to point the volume Class. volume points to the "this" pointer.
          */
         public Create(Volume volume) {
@@ -135,7 +137,8 @@ public class VolumesResource {
     public class Show extends OpenStackRequest<Volume> {
 
         /**
-         * Method Show is used to show the id value of the Client, it is Constructor and depends on the Base Class.
+         * Method Show is used to show the id value of the Client,
+         * it is Constructor and depends on the Base Class.
          * @param id gives the Client Id.
          */
         public Show(String id) {

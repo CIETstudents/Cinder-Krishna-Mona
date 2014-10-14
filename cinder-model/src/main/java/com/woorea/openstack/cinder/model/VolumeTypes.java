@@ -27,7 +27,6 @@ public class VolumeTypes {
 
     /**
      * this method gets volume id.
-     *
      * @return id.
      */
     public String getId() {
@@ -36,7 +35,6 @@ public class VolumeTypes {
 
     /**
      * it sets received volume identifier.
-     *
      * @param id identifier.
      */
     public void setId(String id) {
@@ -45,7 +43,6 @@ public class VolumeTypes {
 
     /**
      * this method gets volume name.
-     *
      * @return name.
      */
     public String getName() {
@@ -54,7 +51,6 @@ public class VolumeTypes {
 
     /**
      * it sets received name.
-     *
      * @param name as volume name.
      */
     public void setName(String name) {
@@ -63,7 +59,6 @@ public class VolumeTypes {
 
     /**
      * this method gets extra specs.
-     *
      * @return links.
      */
     public String getExtra_specs() {
@@ -72,7 +67,6 @@ public class VolumeTypes {
 
     /**
      * set the method from extra specs.
-     *
      * @param extra_specs for volume.
      */
     public void setExtra_specs(String extra_specs) {
@@ -81,7 +75,6 @@ public class VolumeTypes {
 
     /**
      * get volume capabilities.
-     *
      * @return capabilities.
      */
     public String getCapabilities() {
@@ -90,7 +83,6 @@ public class VolumeTypes {
 
     /**
      * set volume capabilities.
-     *
      * @param capabilities - properties needed for volume.
      */
     public void setCapabilities(String capabilities) {
@@ -99,8 +91,7 @@ public class VolumeTypes {
 
     /**
      * generate a string with partial representation of a volume type used in
-     * the creation process
-     *
+     * the creation process.
      * @return string.
      */
     @Override

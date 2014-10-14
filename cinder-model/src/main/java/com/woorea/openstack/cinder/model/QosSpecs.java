@@ -7,7 +7,6 @@ import org.codehaus.jackson.annotate.JsonProperty;
 
 /**
  * This class shows the required specifications for object.
- *
  * @author Krishna
  * @author Mona
  */
@@ -21,7 +20,6 @@ public class QosSpecs implements Iterable<QosSpec>, Serializable {
 
     /**
      * get the list of QOs Specifications.
-     *
      * @return list.
      */
     public List<QosSpec> getList() {
@@ -30,17 +28,16 @@ public class QosSpecs implements Iterable<QosSpec>, Serializable {
 
     /**
      * Used to remove duplicate elements
-     *
      * @return list.
      */
     @Override
     public Iterator<QosSpec> iterator() {
         return list.iterator();
     }
-    /* (non-Javadoc)
-     * @see java.lang.Object#toString()
+    /**
+     * generates a string with required properties.
+     * @return JSon string.
      */
-
     @Override
     public String toString() {
         return "QosSpec [list=" + list + "]";

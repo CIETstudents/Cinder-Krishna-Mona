@@ -155,7 +155,6 @@ public class QosSpec {
 
     /**
      * get the name of the specifications.
-     *
      * @return name.
      */
     public String getName() {
@@ -164,7 +163,6 @@ public class QosSpec {
 
     /**
      * set the name of the specification.
-     *
      * @param name as QOs specification name.
      */
     public void setName(String name) {
@@ -173,7 +171,6 @@ public class QosSpec {
 
     /**
      * get the delay value.
-     *
      * @return delay.
      */
     public String getDelay() {
@@ -182,7 +179,6 @@ public class QosSpec {
 
     /**
      * set the delay
-     *
      * @param delay as value.
      */
     public void setDelay(String delay) {
@@ -191,7 +187,6 @@ public class QosSpec {
 
     /**
      * get the key.
-     *
      * @return throughput.
      */
     public String getThroughput() {
@@ -200,7 +195,6 @@ public class QosSpec {
 
     /**
      * set the throughput.
-     *
      * @param throughput as key.
      */
     public void setThroughput(String throughput) {
@@ -209,7 +203,6 @@ public class QosSpec {
 
     /**
      * get object with the quality of Service specifications.
-     *
      * @return string.
      */
     @Override

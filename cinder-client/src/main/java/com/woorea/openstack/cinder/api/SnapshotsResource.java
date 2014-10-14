@@ -10,6 +10,7 @@ import com.woorea.openstack.cinder.model.Metadata;
 
 /**
  * This class consists of the all the resources for snapshots.
+ *
  * @author Krishna.
  * @author Mona.
  */
@@ -19,7 +20,7 @@ public class SnapshotsResource {
      * An instance CLIENT is created for the OpenStackClient API.
      */
     private final OpenStackClient CLIENT;
-    
+
     /**
      * The created method is used to access the SnapshotResource class.
      * @param client gives the client request.
@@ -36,10 +37,10 @@ public class SnapshotsResource {
     public List list(boolean detail) {
         return new List(detail);
     }
-    
+
     /**
      * This method is to create snapshot.
-     * @param snapshot time copy of data. 
+     * @param snapshot time copy of data.
      * @return snapshot.
      */
     public Create create(Snapshot snapshot) {
@@ -47,7 +48,8 @@ public class SnapshotsResource {
     }
 
     /**
-     * This method is to show String identifier 
+     * This method is to show String identifier
+     *
      * @param id uniquely identifies string.
      * @return identifier.
      */
@@ -57,6 +59,7 @@ public class SnapshotsResource {
 
     /**
      * This method to update newly added string in the method.
+     *
      * @param id as updated identifier.
      * @return identifier.
      */
@@ -65,8 +68,9 @@ public class SnapshotsResource {
     }
 
     /**
-     * Show key and value pairs in meta data. 
-     * @param id as String. 
+     * Show key and value pairs in meta data.
+     *
+     * @param id as String.
      * @return identifier.
      */
     public ShowMetadata showMetadata(String id) {
@@ -75,6 +79,7 @@ public class SnapshotsResource {
 
     /**
      * Update key and value pairs in meta data.
+     *
      * @param id as String identifier.
      * @return updated id.
      */
@@ -83,14 +88,15 @@ public class SnapshotsResource {
     }
 
     /**
-     * This method is to delete identifier. 
+     * This method is to delete identifier.
+     *
      * @param id in String.
      * @return identifier.
      */
     public Delete delete(String id) {
         return new Delete(id);
     }
-    
+
     /**
      * This class extends the attributes in the snapshot.
      */
@@ -103,35 +109,38 @@ public class SnapshotsResource {
     }
 
     /**
-     * Create a snapshot with aid of predefined snapshot model. 
+     * Create a snapshot with aid of predefined snapshot model.
      */
-      public class Create extends OpenStackRequest<Snapshot> {
-                /**
-                 * declare a private variable as snapshot.
-                 */
-		private Snapshot snapshot;
-		
-                /**
-                 * create a method for snapshot.
-                 * @param snapshot as snapshot client.
-                 */
-		public Create(Snapshot snapshot) {
-			super(CLIENT, HttpMethod.POST, "/snapshots", Entity.json(snapshot), Snapshot.class);
-			this.snapshot = snapshot;
-		}
-		
-	}
+    public class Create extends OpenStackRequest<Snapshot> {
 
-      /**
-       * This class is to show the attributes of the snapshot class.
-       */
-        public class Show extends OpenStackRequest<Snapshot> {
-            
-            /**
-             * This method to show the attributes included in the snapshot. 
-             * @param id as client snapshot.
-             */
-            public Show(String id) {
+        /**
+         * declare a private variable as snapshot.
+         */
+        private Snapshot snapshot;
+
+        /**
+         * create a method for snapshot.
+         *
+         * @param snapshot as snapshot client.
+         */
+        public Create(Snapshot snapshot) {
+            super(CLIENT, HttpMethod.POST, "/snapshots", Entity.json(snapshot), Snapshot.class);
+            this.snapshot = snapshot;
+        }
+
+    }
+
+    /**
+     * This class is to show the attributes of the snapshot class.
+     */
+    public class Show extends OpenStackRequest<Snapshot> {
+
+        /**
+         * This method to show the attributes included in the snapshot.
+         *
+         * @param id as client snapshot.
+         */
+        public Show(String id) {
             super(CLIENT, HttpMethod.GET, new StringBuilder("/os-Snapshots/")
                     .append(id).toString(), null, Snapshot.class);
         }
@@ -141,10 +150,11 @@ public class SnapshotsResource {
      * The class ShowMetadata extends the Meta data from the snapshot Model.
      */
     public class ShowMetadata extends OpenStackRequest<Metadata> {
-        
+
         /**
          * This method is show key and value pairs
-         * @param id as meta data 
+         *
+         * @param id as meta data
          */
         public ShowMetadata(String id) {
             super(CLIENT, HttpMethod.GET, new StringBuilder("/os-snapshots/")
@@ -160,14 +170,15 @@ public class SnapshotsResource {
 
         /**
          * Update the method snapshot
+         *
          * @param id as updates client snapshot values.
          */
         public Update(String id) {
             super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-snapshots/")
                     .append(id).toString(), null, Snapshot.class);
         }
-    }    
-        
+    }
+
     /**
      * This class extends key and value pairs of the meta data.
      */
@@ -175,14 +186,15 @@ public class SnapshotsResource {
 
         /**
          * this method update the key and value pairs.
+         *
          * @param id passed as parameter.
          */
         public UpdateMetadata(String id) {
             super(CLIENT, HttpMethod.PUT, new StringBuilder("/os-spanshots/")
                     .append(id).toString(), null, Metadata.class);
         }
-    }    
-    
+    }
+
     /**
      * The class Delete extend the OpenStackRequest class.
      */
@@ -190,6 +202,7 @@ public class SnapshotsResource {
 
         /**
          * Deletes the identifier.
+         *
          * @param id the id to set
          */
         public Delete(String id) {
@@ -198,4 +211,3 @@ public class SnapshotsResource {
         }
     }
 }
-

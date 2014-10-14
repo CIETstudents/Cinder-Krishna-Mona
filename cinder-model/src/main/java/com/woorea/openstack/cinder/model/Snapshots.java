@@ -56,7 +56,7 @@ public class Snapshots implements Iterable<Snapshot>, Serializable {
     }
 
     /**
-     * get the key and value pairs for snapshot.
+     * get the key and value pairs for snapshots.
      * @return meta data.
      */
     public Map<String, String> getMetadata() {

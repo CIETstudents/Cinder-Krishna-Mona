@@ -81,7 +81,6 @@ public class Volume {
 
     /**
      * this method gets volume id.
-     *
      * @return id.
      */
     public String getId() {
@@ -90,7 +89,6 @@ public class Volume {
 
     /**
      * it sets received volume identifier.
-     *
      * @param id identifier.
      */
     public void setId(String id) {
@@ -99,7 +97,6 @@ public class Volume {
 
     /**
      * this method gets volume name.
-     *
      * @return name.
      */
     public String getName() {
@@ -108,7 +105,6 @@ public class Volume {
 
     /**
      * it sets received name.
-     *
      * @param name as volume name.
      */
     public void setName(String name) {
@@ -117,7 +113,6 @@ public class Volume {
 
     /**
      * this method gets HTTP links.
-     *
      * @return links.
      */
     public String getLinks() {
@@ -125,8 +120,7 @@ public class Volume {
     }
 
     /**
-     * this method set links,
-     *
+     * this method set links.
      * @param links with URL.
      */
     public void setLinks(String links) {
@@ -135,7 +129,6 @@ public class Volume {
 
     /**
      * the volume status.
-     *
      * @return status.
      */
     public String getStatus() {
@@ -143,8 +136,7 @@ public class Volume {
     }
 
     /**
-     * this method set status
-     *
+     * this method set status.
      * @param status of the method.
      */
     public void setStatus(String status) {
@@ -153,7 +145,6 @@ public class Volume {
 
     /**
      * Gets one or more instance.
-     *
      * @return attachments.
      */
     public String getAttachments() {
@@ -162,7 +153,6 @@ public class Volume {
 
     /**
      * set one or more instance.
-     *
      * @param attachments for instance.
      */
     public void setAttachments(String attachments) {
@@ -170,8 +160,7 @@ public class Volume {
     }
 
     /**
-     * enable bootable attribute
-     *
+     * enable bootable attribute.
      * @return bootable.
      */
     public boolean getBootable() {
@@ -180,7 +169,6 @@ public class Volume {
 
     /**
      * set bootable attribute.
-     *
      * @param bootable if true.
      */
     public void setBootable(boolean bootable) {
@@ -189,7 +177,6 @@ public class Volume {
 
     /**
      * Time or date at which the volume is created.
-     *
      * @return date or time.
      */
     public Calendar getCreated_at() {
@@ -198,7 +185,6 @@ public class Volume {
 
     /**
      * Set time or date.
-     *
      * @param created_at time.
      */
     public void setCreated_at(Calendar created_at) {
@@ -207,7 +193,6 @@ public class Volume {
 
     /**
      * this method gives volume description.
-     *
      * @return description.
      */
     public String getDescription() {
@@ -216,7 +201,6 @@ public class Volume {
 
     /**
      * sets volume description.
-     *
      * @param description for volume.
      */
     public void setDescription(String description) {
@@ -225,7 +209,6 @@ public class Volume {
 
     /**
      * get the availability zone.
-     *
      * @return availability zone.
      */
     public String getAvailability_zone() {
@@ -234,7 +217,6 @@ public class Volume {
 
     /**
      * sets availability zone.
-     *
      * @param availability_zone for volume.
      */
     public void setAvailability_zone(String availability_zone) {
@@ -243,7 +225,6 @@ public class Volume {
 
     /**
      * get volume identifier from existing volume.
-     *
      * @return source_volid.
      */
     public String getSource_volid() {
@@ -252,7 +233,6 @@ public class Volume {
 
     /**
      * set new volume identifier.
-     *
      * @param source_volid.
      */
     public void setSource_volid(String source_volid) {
@@ -261,7 +241,6 @@ public class Volume {
 
     /**
      * gets volume description.
-     *
      * @return display_description.
      */
     public String getDisplay_description() {
@@ -270,7 +249,6 @@ public class Volume {
 
     /**
      * sets volume description.
-     *
      * @param display_description
      */
     public void setDisplay_description(String display_description) {
@@ -279,7 +257,6 @@ public class Volume {
 
     /**
      * gets identifier from existing volume snapshot.
-     *
      * @return snapshot_id.
      */
     public String getSnapshot_id() {
@@ -288,7 +265,6 @@ public class Volume {
 
     /**
      * sets identifier received from existing volume snapshot.
-     *
      * @param snapshot_id as new identifier.
      */
     public void setSnapshot_id(String snapshot_id) {
@@ -297,7 +273,6 @@ public class Volume {
 
     /**
      * size of the volume.
-     *
      * @return size.
      */
     public Long getSize() {
@@ -306,7 +281,6 @@ public class Volume {
 
     /**
      * set volume size.
-     *
      * @param size in GB.
      */
     public void setSize(Long size) {
@@ -315,7 +289,6 @@ public class Volume {
 
     /**
      * displays the volume name.
-     *
      * @return name.
      */
     public String getDisplay_name() {
@@ -324,7 +297,6 @@ public class Volume {
 
     /**
      * set volume name.
-     *
      * @param display_name
      */
     public void setDisplay_name(String display_name) {
@@ -333,7 +305,6 @@ public class Volume {
 
     /**
      * gets type of volume.
-     *
      * @return volume_type.
      */
     public String getVolume_type() {
@@ -342,7 +313,6 @@ public class Volume {
 
     /**
      * sets volume type.
-     *
      * @param volume_type as associated with volume.
      */
     public void setVolume_type(String volume_type) {
@@ -351,7 +321,6 @@ public class Volume {
 
     /**
      * Get the key for value.
-     *
      * @return meta data.
      */
     public Map<String, String> getMetadata() {
@@ -359,9 +328,8 @@ public class Volume {
     }
 
     /**
-     * Set the meta data
-     *
-     * @param metadata
+     * Set the meta data.
+     * @param metadata.
      */
     public void setMetadata(Map<String, String> metadata) {
         this.metadata = metadata;
@@ -369,7 +337,6 @@ public class Volume {
 
     /**
      * generates a string with required properties.
-     *
      * @return JSon string.
      */
     @Override

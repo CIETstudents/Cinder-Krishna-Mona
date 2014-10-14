@@ -34,12 +34,11 @@ public class LimitsResource {
     public Show show(String id) {
         return new Show(id);
     }
-
     /**
      * This class show extends open stack Request. 
      */
     public class Show extends OpenStackRequest<Limits> {
-
+        
         /**
          * Show Constructor gives the Client Id, depends on base Class and uses HttpMethod GET.
          * @param id the id to set

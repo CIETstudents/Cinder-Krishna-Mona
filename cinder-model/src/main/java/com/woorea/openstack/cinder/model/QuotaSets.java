@@ -21,7 +21,6 @@ public class QuotaSets implements Iterable<QuotaSet>, Serializable {
 
     /**
      * get the list of Quota Sets.
-     *
      * @return list.
      */
     public List<QuotaSet> getList() {
@@ -30,7 +29,6 @@ public class QuotaSets implements Iterable<QuotaSet>, Serializable {
 
     /**
      * remove duplicate elements.
-     *
      * @return list.
      */
     @Override

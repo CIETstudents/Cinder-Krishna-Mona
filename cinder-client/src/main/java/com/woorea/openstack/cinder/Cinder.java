@@ -34,10 +34,23 @@ public class Cinder extends OpenStackClient {
      */
     private final QuotaSetsResource QUOTA_SETS;
  
+    /**
+     * An instance is created for QosSpecsResource class.
+     * QosSpecifications specifies all the quality of service that has 
+     * Create, Show, update and List.  
+     */
     private final QosSpecsResource QOS_SPECS;
     
+    /**
+     * An instance is created for VersionsResource class.
+     * a version that encompasses all the resources required for version class. 
+     */
     private final VersionsResource VERSIONS;
     
+    /**
+     * An instance in created for LIMITSRESOURCE class.
+     * these limits class are list of project in a multi-tenancy cloud.
+     */
     private final LimitsResource LIMITS;
     /**
      * The instance of OpenStackClientConnector is used to access the Cinder
@@ -85,17 +98,22 @@ public class Cinder extends OpenStackClient {
     }
     
     /**
-     * 
-     * @return 
+     * @return QOSSPECS
      */
      public QosSpecsResource qosspecs() {
         return QOS_SPECS;
     }
      
+     /**
+      * @return VERSIONS 
+      */
      public VersionsResource versions(){
          return VERSIONS;
      }
      
+     /**
+      * @return the LIMITS 
+      */
      public LimitsResource limits() {
          return LIMITS;
      }

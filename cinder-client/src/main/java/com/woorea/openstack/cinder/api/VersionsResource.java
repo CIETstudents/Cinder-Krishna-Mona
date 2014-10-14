@@ -66,7 +66,8 @@ public class VersionsResource {
     public class Show extends OpenStackRequest<Version> {
 
         /**
-         * Method Show is used to show the id value of the Client, it iS constructor and depends on the Base Class.
+         * Method Show is used to show the id value of the Client, 
+         * it iS constructor and depends on the Base Class.
          * @param id gives the Client Id.
          */
         public Show(String id) {

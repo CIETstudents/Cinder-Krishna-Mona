@@ -4,7 +4,6 @@ import java.util.Map;
 
 /**
  * This class shows key and value pairs for volume.
- *
  * @author Krishna.
  * @author Mona.
  */
@@ -17,7 +16,6 @@ public class Metadata {
 
     /**
      * get key and value pairs.
-     *
      * @return meta data.
      */
     public Map<String, String> getMetadata() {
@@ -26,7 +24,6 @@ public class Metadata {
 
     /**
      * Set the meta data
-     *
      * @param metadata as key and value pairs.
      */
     public void setMetadata(Map<String, String> metadata) {

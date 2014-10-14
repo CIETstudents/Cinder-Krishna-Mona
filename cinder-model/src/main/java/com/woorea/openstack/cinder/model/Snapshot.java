@@ -53,72 +53,56 @@ public class Snapshot {
     /**
      * One or more meta data key and value pairs to associate with the volume.
      */
-    
     private Map<String, String> metadata;
     /**
      * it shows the snapshot volume.
      */
-    
     private String volume;
     /**
      * size of the snapshot.
      */
-    
     private Long size;
     /**
      * version of the snapshot.
      */
-    
     private String key;
-
     /**
      * this method gets snapshot id.
-     *
-    * @return id.
+     * @return id.
      */
     public String getId() {
         return id;
     }
-
     /**
      * it sets received snapshot identifier.
-     *
      * @param id identifier.
      */
     public void setId(String id) {
         this.id = id;
     }
-
     /**
      * this method gets snapshot name.
-     *
      * @return name.
      */
     public String getName() {
         return name;
     }
-
     /**
      * it sets received name.
-     *
      * @param name as snapshot name.
      */
     public void setName(String name) {
         this.name = name;
     }
-
     /**
      * snapshot is availability.
-     *
      * @return status.
      */
     public String getStatus() {
         return status;
     }
-
     /**
      * this method set status of the snapshot.
-     *
      * @param status of the method.
      */
     public void setStatus(String status) {
@@ -127,7 +111,6 @@ public class Snapshot {
 
     /**
      * this method gives snapshot description.
-     *
      * @return description.
      */
     public String getDescription() {
@@ -136,7 +119,6 @@ public class Snapshot {
 
     /**
      * sets snapshot description.
-     *
      * @param description for volume.
      */
     public void setDescription(String description) {
@@ -145,7 +127,6 @@ public class Snapshot {
 
     /**
      * size of the snapshot.
-     *
      * @return size.
      */
     public Long getSize() {
@@ -154,7 +135,6 @@ public class Snapshot {
 
     /**
      * set snapshot size.
-     *
      * @param size in GB.
      */
     public void setSize(Long size) {
@@ -163,7 +143,6 @@ public class Snapshot {
 
     /**
      * displays the snapshot name.
-     *
      * @return name.
      */
     public String getDisplay_name() {
@@ -172,7 +151,6 @@ public class Snapshot {
 
     /**
      * set snapshot name.
-     *
      * @param display_name
      */
     public void setDisplay_name(String display_name) {
@@ -181,7 +159,6 @@ public class Snapshot {
 
     /**
      * gets snapshot description.
-     *
      * @return display_description.
      */
     public String getDisplay_description() {

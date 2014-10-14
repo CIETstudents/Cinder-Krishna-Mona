@@ -33,7 +33,6 @@ public class Version {
 
     /**
      * get the identifier of version.
-     *
      * @return identifier.
      */
     public String getId() {
@@ -42,7 +41,6 @@ public class Version {
 
     /**
      * set the identifier of version.
-     *
      * @param id for version.
      */
     public void setId(String id) {
@@ -51,7 +49,6 @@ public class Version {
 
     /**
      * get the status of the version.
-     *
      * @return status.
      */
     public String getStatus() {
@@ -60,16 +57,14 @@ public class Version {
 
     /**
      * set the status of version.
-     *
-     * @param status as supported or not
+     * @param status as supported or not.
      */
     public void setStatus(String status) {
         this.status = status;
     }
 
     /**
-     * get last updated date
-     *
+     * get last updated date.
      * @return updated.
      */
     public Date getUpdated() {
@@ -78,7 +73,6 @@ public class Version {
 
     /**
      * set updated date.
-     *
      * @param updated as new date.
      */
     public void setUpdated(Date updated) {
@@ -86,8 +80,7 @@ public class Version {
     }
 
     /**
-     * get the links
-     *
+     * get the links.
      * @return links.
      */
     public String getLinks() {
@@ -96,7 +89,6 @@ public class Version {
 
     /**
      * set the links.
-     *
      * @param links from version.
      */
     public void setLinks(String links) {
@@ -105,7 +97,6 @@ public class Version {
 
     /**
      * get base and type of application.
-     *
      * @return media_types.
      */
     public String getMedia_types() {
@@ -113,8 +104,7 @@ public class Version {
     }
 
     /**
-     * set the base and types of application
-     *
+     * set the base and types of application.
      * @param media_types for application.
      */
     public void setMedia_types(String media_types) {

@@ -54,7 +54,6 @@ public class QuotaSetsResource {
     public Delete delete(String id) {
         return new Delete(id);
     }
-    
     /**
      * ShowQuota User through tenant id.
      * @param tenantId is to show quota set user.

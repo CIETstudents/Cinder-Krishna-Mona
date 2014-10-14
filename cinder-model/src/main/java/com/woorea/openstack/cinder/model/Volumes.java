@@ -21,7 +21,6 @@ public class Volumes implements Iterable<Volume>, Serializable {
 
     /**
      * gets identifier for volume.
-     *
      * @return list.
      */
     public List<Volume> getId() {
@@ -30,7 +29,6 @@ public class Volumes implements Iterable<Volume>, Serializable {
 
     /**
      * gets name for the volume.
-     *
      * @return list.
      */
     public List<Volume> getName() {
@@ -39,7 +37,6 @@ public class Volumes implements Iterable<Volume>, Serializable {
 
     /**
      * used to remove duplicate elements.
-     *
      * @return list.
      */
     @Override
