@@ -8,22 +8,19 @@ import com.woorea.openstack.cinder.model.Version;
 import com.woorea.openstack.cinder.model.Versions;
 
 /**
- *
+ * This class encompasses all the resources required for versions.
  * @author Krishna <krishna.it2329@gmail.com>
  * @author Mona <mona@gmail.com>
- * 
  */
 public class VersionsResource {
     
     /**
      * An instance CLIENT is created for the OpenStackClient API.
      */
-    
     private final OpenStackClient CLIENT;
 
     /**
      * The created instance is used to access the VersionsResource class.
-     *
      * @param client gives the Client Request.
      */
     public VersionsResource(OpenStackClient client) {
@@ -32,7 +29,6 @@ public class VersionsResource {
 
     /**
      * Instance is created for the List class.
-     *
      * @param detail the detail to set
      * @return the list
      */
@@ -42,7 +38,6 @@ public class VersionsResource {
     
     /**
      * Instance is created for the Show class.
-     *
      * @param id gives id of Client
      * @return Shows new id value
      */
@@ -56,9 +51,7 @@ public class VersionsResource {
      public class List extends OpenStackRequest<Versions> {
 
          /**
-         * Parameterized Constructor for the list Class and return type of
-         * boolean.
-         *
+         * Parameterized Constructor for the list Class and return type of boolean.
          * @param detail the detail to set
          */
         public List(boolean detail) {
@@ -73,8 +66,7 @@ public class VersionsResource {
     public class Show extends OpenStackRequest<Version> {
 
         /**
-         * Method Show is used to show the id value of the Client, it is
-         * Constructor and depends on the Base Class.
+         * Method Show is used to show the id value of the Client, it iS constructor and depends on the Base Class.
          * @param id gives the Client Id.
          */
         public Show(String id) {

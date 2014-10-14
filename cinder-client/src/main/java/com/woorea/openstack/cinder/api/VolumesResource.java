@@ -19,12 +19,10 @@ public class VolumesResource {
     /**
      * An instance CLIENT is created for the OpenStackClient API.
      */
-
     private final OpenStackClient CLIENT;
 
     /**
-     * The created instance is used to access the VolumeResource class.
-     *
+     * This method is used to access the VolumeResource class.
      * @param client gives the Client Request.
      */
     public VolumesResource(OpenStackClient client) {
@@ -32,8 +30,7 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the List class.
-     *
+     * Method is created to list attributes.
      * @param detail the detail to set
      * @return the list
      */
@@ -42,9 +39,7 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the Create class. Instance is also created for
-     * the Volume class and access the Create class.
-     *
+     * This method is to create volume.
      * @param volume gives the volume consumed detail
      * @return volume variable for create method
      */
@@ -53,8 +48,7 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the Show class.
-     *
+     * This method is used to create string identifier.
      * @param id gives id of Client
      * @return Shows new id value
      */
@@ -63,8 +57,7 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the Update class.
-     *
+     * This method is to update string identifier.
      * @param id gives id of Client
      * @return Shows new id value
      */
@@ -73,8 +66,7 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the Manage class.
-     *
+     *  This method is to manage string identifier.
      * @param id gives id of Client
      * @return Shows new id value
      */
@@ -83,19 +75,16 @@ public class VolumesResource {
     }
 
     /**
-     * Instance is created for the Type class.
-     *
+     * identifier finds out types of methods in volume.
      * @param id gives id of Client
-     * @return Shows new id value
+     * @return new identifier value.
      */
     public Types types(String id) {
         return new Types(id);
     }
 
     /**
-     * Instance is created for the Delete class. Method Delete for Volume Class
-     * and pass the id value.
-     *
+     * This method is to delete the string.
      * @param id gives id of Client
      * @return deleted id value
      */
@@ -109,9 +98,7 @@ public class VolumesResource {
     public class List extends OpenStackRequest<Volumes> {
 
         /**
-         * Parameterized Constructor for the list Class and return type of
-         * boolean.
-         *
+         * Parameterized Constructor for the list Class and return type of boolean.
          * @param detail the detail to set
          */
         public List(boolean detail) {
@@ -132,13 +119,8 @@ public class VolumesResource {
         private Volume volume;
 
         /**
-         * The created instance is used to access the Create class.
-         *
-         * Constructor for the Create Class and has the parameter of return type
-         * volume and calls the HttpMethod "POST".
-         *
-         * @param volume to point the volume Class. volume points to the "this"
-         * pointer.
+         * The created method  and has the parameter of return type volume and calls the HttpMethod "POST".         *
+         * @param volume to point the volume Class. volume points to the "this" pointer.
          */
         public Create(Volume volume) {
             super(CLIENT, HttpMethod.POST, "/volumes", Entity.json(volume), Volume.class);
@@ -153,9 +135,7 @@ public class VolumesResource {
     public class Show extends OpenStackRequest<Volume> {
 
         /**
-         * Method Show is used to show the id value of the Client, it is
-         * Constructor and depends on the Base Class.
-         *
+         * Method Show is used to show the id value of the Client, it is Constructor and depends on the Base Class.
          * @param id gives the Client Id.
          */
 
@@ -165,24 +145,6 @@ public class VolumesResource {
         }
     }
 
-//    /**
-//     * Class ShowMetadata inherits the OpenStackRequest given by the Client and
-//     * has the Metadata information.
-//     */
-//    public class ShowMetadata extends OpenStackRequest<Metadata> {
-//
-//        /**
-//         * Constructor method of ShowMetadata and depends on the Base Class.
-//         *
-//         * @param id gives the Client Id.
-//         */
-//        public ShowMetadata(String id) {
-//            super(CLIENT, HttpMethod.GET, new StringBuilder("/os-volumes/")
-//                    .append(id).append("/metadata").toString(), null,
-//                    Metadata.class);
-//        }
-//    }
-    
     /**
      * The class Show extends the Volume class.
      */
@@ -191,7 +153,6 @@ public class VolumesResource {
         /**
          * Method Update is used to update the id value of the Client, it is
          * Constructor and depends on the Base Class.
-         *
          * @param id gives the Client Id.
          */
         public Update(String id) {
@@ -199,22 +160,14 @@ public class VolumesResource {
                     .append(id).toString(), null, Volume.class);
         }
     }
-//		private Update endpoint;
-//		
-//		public Create(Update endpoint) {
-//			super(client, HttpMethod.POST, "/endpoints", Entity.json(endpoint), Update.class);
-//			this.endpoint = endpoint;
-//		}
-
-    /**
-     * The class Manage extends the Volume class.
-     */
+        
+     /**
+      * The class Manage extends the Volume class.
+      */
     public class Manage extends OpenStackRequest<VolumeManage> {
 
         /**
-         * Method Manage is used to show the id value of the Client, it is
-         * Constructor and depends on the Base Class.
-         *
+         * Method Manage is used to show the id value of the Client, it is Constructor and depends on the Base Class.
          * @param id gives the Client Id.
          */
         public Manage(String id) {
@@ -231,7 +184,6 @@ public class VolumesResource {
         /**
          * Method Types is used to show the id value of the Client, it is
          * Constructor and depends on the Base Class.
-         *
          * @param id gives the Client Id.
          */
         public Types(String id) {
@@ -242,15 +194,11 @@ public class VolumesResource {
 
     /**
      * The class Delete extends the OpenStackRequest class.
-     *
-     * Class Delete inherits the OpenStackRequest given by the Client and
-     * deletes the Request given by the Client.
      */
     public class Delete extends OpenStackRequest<Void> {
 
         /**
          * Constructor method of Delete and Calls the HttpMethod of Delete.
-         *
          * @param id gives the Client Id.
          */
         public Delete(String id) {

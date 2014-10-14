@@ -16,14 +16,12 @@ import com.woorea.openstack.cinder.api.VolumesResource;
  */
 public class Cinder extends OpenStackClient {
     /**
-     * The instance is created for the ExtensionResouce class.
-     *
+     * The instance is created for the SnapshotResouce class.
      * Lists Block Storage API extensions.
      */
     private final SnapshotsResource SNAPSHOTS;
     /**
-     * The instance is created for the VolumesExtension class.
-     *
+     * The instance is created for the VolumesResource class.
      * A volume is a detachable block storage device. You can think of it as a
      * USB hard drive. You can attach a volume to one instance at a time
      */
@@ -31,7 +29,6 @@ public class Cinder extends OpenStackClient {
  
     /**
      * The instance is created for QuotaSetsResource class.
-     *
      * Administrators only, depending on policy settings. View, update, and
      * delete quotas for a tenant
      */
@@ -66,9 +63,6 @@ public class Cinder extends OpenStackClient {
         this(endpoint, null);
     }
 
-    
-
-
     /**
      * @return the SNAPSHOTS
      */
@@ -90,6 +84,10 @@ public class Cinder extends OpenStackClient {
         return QUOTA_SETS;
     }
     
+    /**
+     * 
+     * @return 
+     */
      public QosSpecsResource qosspecs() {
         return QOS_SPECS;
     }
