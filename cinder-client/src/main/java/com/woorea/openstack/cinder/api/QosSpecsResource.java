@@ -10,8 +10,8 @@ import com.woorea.openstack.cinder.model.QosSpecs;
 
 /**
  * This class encompasses the resources for Quality of Service Specification.
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class QosSpecsResource {
 

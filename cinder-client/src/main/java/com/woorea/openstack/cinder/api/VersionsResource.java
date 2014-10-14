@@ -9,8 +9,8 @@ import com.woorea.openstack.cinder.model.Versions;
 
 /**
  * This class encompasses all the resources required for versions.
- * @author Krishna <krishna.it2329@gmail.com>
- * @author Mona <mona@gmail.com>
+ * @author Krishna
+ * @author Mona
  */
 public class VersionsResource {
     

@@ -10,7 +10,7 @@ import com.woorea.openstack.cinder.model.Metadata;
 
 /**
  * This class consists of the all the resources for snapshots.
- * @author Krishna
+ * @author Krishna.
  * @author Mona.
  */
 public class SnapshotsResource {

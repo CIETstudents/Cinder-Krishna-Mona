@@ -9,8 +9,8 @@ import com.woorea.openstack.cinder.model.QuotaSets;
 
 /**
  * This class gives all the resources for QuotaSetsResource.
- * @author Krishna.
- * @author Mona.
+ * @author Krishna
+ * @author Mona
  */
 public class QuotaSetsResource {
     
